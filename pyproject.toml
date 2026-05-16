@@ -1,0 +1,18 @@
+[project]
+name = "agenttrajectoryparser"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "requests",
+    "beautifulsoup4"
+]
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+packages = ["metrics_computation"]
+
+[project.scripts]
+metrics-computation = "metrics_computation:main"
+
